@@ -23,8 +23,18 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <p className="text-center font-bold text-xl pt-5">Disclaimer</p>
-      <p className="text-center font-light p-2">Copyright Disclaimer under section 107 of the Copyright Act 1976, allowance is made of &quot;fair use&quot; for education purpose</p>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      {/* <p className="text-center font-bold text-xl pt-5">Disclaimer</p> */}
+      <p className="text-center font-light p-2">Made with ❤️ by AHAD.</p>
+      <p className="text-center font-light p-2">This project is for educational purposes only. The project is open-source and free to use 🙌 .</p>
     </main>
   );
 }
