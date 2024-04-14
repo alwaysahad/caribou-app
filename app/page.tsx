@@ -3,16 +3,16 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col bg-gray-100 dark:bg-gray-900" >
-      <header className="flex justify-center items-center" style={{paddingTop: '25vh', paddingBottom: '20vh'}}>
+    <div className="flex flex-col bg-gray-100 dark:bg-gray-900">
+      <header className="flex justify-center items-center" style={{ paddingTop: '25vh', paddingBottom: '20vh' }}>
         <div className="text-center lg:text-left">
-          <h1 className="text-3xl md:text-4xl lg:text-7xl font-bold text-white leading-tight">
+          <h1 className="text-3xl md:text-4xl lg:text-7xl font-bold text-gray-800 dark:text-white leading-tight">
             Welcome to Caribou
           </h1>
-          <p className="text-lg md:text-xl lg:text-2xl text-gray-300 dark:text-white leading-tight mt-4">
+          <p className="text-lg md:text-xl lg:text-2xl text-gray-600 dark:text-gray-300 leading-tight mt-4">
             Seamlessly store your files
           </p>
-          <p className="mt-8 text-base md:text-lg lg:text-xl text-gray-700 dark:text-gray-300">
+          <p className="mt-8 text-base md:text-lg lg:text-xl text-gray-700 dark:text-gray-400">
             From personal memories to professional documents, access your files anytime, anywhere with Caribou.
           </p>
           <Link href="/dashboard">
@@ -23,7 +23,7 @@ export default function Home() {
           </Link>
         </div>
       </header>
-      <footer className="bg-gray-900 text-gray-300 text-center py-8">
+      <footer className="text-center py-8">
         <div>
           <p className="text-sm">
             Made with &hearts; by AHAD.
@@ -33,6 +33,7 @@ export default function Home() {
           </p>
         </div>
       </footer>
+
     </div>
   );
 }

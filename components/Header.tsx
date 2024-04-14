@@ -6,15 +6,15 @@ import icon from "./icon.png";
 
 function Header() {
   return (
-  <header className="flex items-center justify-between">
-    <Link href="/" className="flex items-center space-x-2 " >
+  <header className="flex items-center justify-between" style={{padding: '1vh'}}>
+    <Link href="/" className="flex items-center  " >
       <div >
       <Image 
       src={icon}
       alt="logo"
       width={40}
       height={40}
-      style={{ margin: '1vh',marginLeft: '3vh'}}
+      style={{marginLeft: '2vh'}}
       />
       </div>
       <h1 className="font-bold text-xl">CARIBOU</h1>
