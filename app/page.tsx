@@ -3,35 +3,36 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="">
-      <div className="flex flex-col lg:flex-row items-center bg-[#1E1919] dark:bg-slate-800">
-        <div className="p-10 flex flex-col bg-[#2B2929] dark:bg-slate-800 text-white space-y-5">
-          <h1 className="text-5xl font-bold">
-            Welcome to Caribou. <br /><br />
-            Storing everything for your personal and professional needs all at your fingertips.
+    <div className="flex flex-col bg-gray-100 dark:bg-gray-900" >
+      <header className="flex justify-center items-center" style={{paddingTop: '25vh', paddingBottom: '20vh'}}>
+        <div className="text-center lg:text-left">
+          <h1 className="text-3xl md:text-4xl lg:text-7xl font-bold text-white leading-tight">
+            Welcome to Caribou
           </h1>
-
-          <p className="text-lg">
-            Sign up for free and start storing your files today & securely
-            access them from anywhere.
+          <p className="text-lg md:text-xl lg:text-2xl text-gray-300 dark:text-white leading-tight mt-4">
+            Seamlessly store your files
           </p>
-
-          {/* Corrected Link component */}
-          <Link href="/dashboard" className="flex cursor-pointer bg-blue-500 p-5 w-fit">
-            Try it for FREE!
-            <ArrowRight className="ml-10"/>
+          <p className="mt-8 text-base md:text-lg lg:text-xl text-gray-700 dark:text-gray-300">
+            From personal memories to professional documents, access your files anytime, anywhere with Caribou.
+          </p>
+          <Link href="/dashboard">
+            <div className="mt-10 inline-flex bg-blue-500 hover:bg-blue-700 text-white font-semibold py-4 px-8 lg:px-10 rounded-full flex items-center space-x-2 transition duration-300 ease-in-out cursor-pointer">
+              <span className="text-lg">Try it for FREE!</span>
+              <ArrowRight className="text-xl" />
+            </div>
           </Link>
         </div>
-      </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-
-      {/* <p className="text-center font-bold text-xl pt-5">Disclaimer</p> */}
-      <p className="text-center font-light p-2">Made with ❤️ by AHAD.</p>
-      <p className="text-center font-light p-2">This project is for educational purposes only. The project is open-source and free to use 🙌 .</p>
-    </main>
+      </header>
+      <footer className="bg-gray-900 text-gray-300 text-center py-8">
+        <div>
+          <p className="text-sm">
+            Made with &hearts; by AHAD.
+          </p>
+          <p className="text-sm">
+            This project is for educational purposes only. It is open-source and free to use 🙌.
+          </p>
+        </div>
+      </footer>
+    </div>
   );
 }
